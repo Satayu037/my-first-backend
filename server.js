@@ -11,7 +11,7 @@ const server = createServer((req, res) => {
     );
   } else {
     res.writeHead(404);
-    res.end(JSON.stringify({ error: "ไมพบหนาที่ตองการ" }));
+    res.end(JSON.stringify({ error: "ไม่พบหน้าที่ต้องการ" }));
   }
 });
 server.listen(3000, () => {
